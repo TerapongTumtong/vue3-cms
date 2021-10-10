@@ -79,16 +79,5 @@ export default defineComponent({
  box-shadow: 0 0 3px brown;
  
 }
-._loading-icon {
-  position: absolute;
-  top: 50%;
-  right: 0.75rem;
-  width: 14px;
-  height: 14px;
-  margin-top: -7px;
-  color: 'green';
-}
-._loading-icon-error {
-  color: 'red';
-}
+
 </style>

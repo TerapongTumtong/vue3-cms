@@ -16,10 +16,9 @@
 </template>
 
 <script>
-import LoadingIcon from "@/components/icons/LoadingIcon.vue";
+
 export default {
   components: {
- LoadingIcon
   },
   emits: ["submit"],
   props: {
@@ -40,16 +39,5 @@ export default {
 <style scoped>
 
 
-._loading-icon {
-  position: absolute;
-  top: 50%;
-  right: 0.75rem;
-  width: 14px;
-  height: 14px;
-  margin-top: -7px;
-  color: 'green';
-}
-._loading-icon-error {
-  color: 'red';
-}
+
 </style>
