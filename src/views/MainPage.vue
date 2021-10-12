@@ -60,7 +60,7 @@
   </div>
 
   <div class="page has-sidebar-left">
-    <div class="m-1 container-fluid bg-white vh-100">
+    <div class="m-1 container-fluid bg-white">
       <div class="card-body">
         <router-view v-if="user.permissions" />
       </div>

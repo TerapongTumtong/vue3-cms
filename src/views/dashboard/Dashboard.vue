@@ -1,10 +1,11 @@
 <template>
   <TitleDetail  :titleName="'Dasdboard'" :titleDetail="'get Started'" />
     <div class="container-fluid my-3">
-        <p>You are the boss make something great.</p>
-    </div>
 
   
+     
+       <SearchData />
+   </div>
 </template>
 
 <script>
@@ -12,19 +13,37 @@ import {computed} from 'vue';
 import {useStore} from "vuex";
 import TitleDetail from "@/components/template/TitleDetail.vue";
 
+import SearchData from '@/views/dashboard/SearchData.vue';
+
 export default {
   name: "Dashboard",
   components: {
-    TitleDetail
+    TitleDetail,
+  
+    SearchData
   },
   setup() {
     const store = useStore();
     const user = computed(() => store.state.User.user);
-   
-    return {
+  
+  
+    (async function () {
+     // first method
+
       
-      user
+
+    })();
+
+     const  handleSearch = async () => {
+
+     
+    };
+
+    return {
+      user,
+      handleSearch,
     }
-  }
+  },
+  
 }
 </script>
