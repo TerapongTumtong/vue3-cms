@@ -19,12 +19,13 @@ export default {
     console.log("Value of val is: " + this.modelsearch);
   },
   methods: {
-    clearTable() {
+    showTable() {
       setTimeout(function () {
         $("#example").DataTable({
+          length: 25,
           lengthMenu: [
-            [5, 10, 25, 50, -1],
-            [5, 10, 25, 50, "All"]
+            [  25, 50,100,500 -1],
+            [  25, 50,100,500, "All"]
           ],
 
           //frtiplB
@@ -50,23 +51,23 @@ export default {
   mounted() {
     if (this.resetTable) {
       this.datas = [];
-      this.clearTable();
+      this.showTable();
       return;
     }
     if (this.modelsearch.length == 0) {
       this.datas = [];
-      this.clearTable();
+      this.showTable();
       return;
     }
     if (this.modelsearch.email == "" || this.modelsearch.password == "") {
       this.datas = [];
-      this.clearTable();
+      this.showTable();
       return;
     }
 
     axios.get("https://www.testjsonapi.com/users/").then(res => {
       this.datas = res.data;
-      this.clearTable();
+      this.showTable();
     });
   },
   data: function () {
@@ -77,8 +78,10 @@ export default {
 };
 </script>
 <template>
-  <div id="divToPrint">
-    <table class="table table-hover table-bordered" id="example">
+<div class="container-fluid">
+   <div class="card">
+  <div class="card-body">
+    <table class="table table-hover table-bordered table-responsive" id="example">
       <thead>
         <tr>
           <th>ID</th>
@@ -96,7 +99,9 @@ export default {
         </tr>
       </tbody>
     </table>
-  </div>
+</div>
+</div>
+</div>
 </template>
 <style scoped>
 table.dataTable thead .sorting {
