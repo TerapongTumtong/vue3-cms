@@ -1,5 +1,5 @@
 <template>
-  <TitleDetail  :titleName="'Dasdboard'" :titleDetail="'get Started'" />
+  <TitleDetail :titleName="'Dasdboard'" :titleDetail="'dasdboard / search'" />
     <div class="container-fluid my-3">
        <SearchData />
    </div>

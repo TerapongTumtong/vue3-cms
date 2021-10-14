@@ -1,11 +1,10 @@
 <template>
                 <div class="col">
                     <h1 class="s-24">
-                        <i class="icon-pages"></i>
-                        {{titleName}} <span class="s-14">{{titleDetail}}</span>
+                       <b> {{titleName}} <span class="s-14">{{titleDetail}}</span></b>
                         
                     </h1>
-                    
+                  
                 </div>
 </template>
 
@@ -15,6 +14,7 @@
 export default {
   name: "TitleDetail",
  props: {
+  
     titleName: {
       type: String,
       required: true

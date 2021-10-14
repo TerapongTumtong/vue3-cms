@@ -1,25 +1,26 @@
 
 <template>
-  <div class="main-sidebar vh-100" data-toggle="offcanvas">
+  <div class="main-sidebar bg-dark" data-toggle="offcanvas">
     <div
       class="slimScrollDiv"
       style="position: relative; overflow: hidden; width: auto; height: 185px"
     >
       <section
-        class="sidebar m-1 p-1"
-        style="height: 185px; overflow: hidden; width: auto"
+        class="sidebar bg-light"
+        style="height: 185px; overflow: hidden; width: auto; margin: 0.1em;"
       >
         <LogoNav />
         <div class="relative">
           <ProfileMenuNav/>
-          <div class="user-panel p-3 light mb-2">
+          <div class="user-panel p-3 bg-dark mb-2">
             <CardUserNav />
             <ProfileMenu />
           </div>
         </div>
-        <MenuRight class="m-1 p-1" />
+        <MenuRight />
       </section>
       <SlimScrollBarNav/>
+      <div class=" bg-dark h-20 width: auto; text-center"><b>Jamsai CMS version 1</b></div>
     </div>
   </div>
   <!-- /#sidebar-wrapper -->
@@ -33,19 +34,19 @@
 
     <div class="sticky">
       <div
-        class="navbar navbar-expand navbar-dark  
+        class="navbar navbar-expand navbar-dark bg-gradient-light
           d-flex
           justify-content-between
           bd-navbar
-          blue
+          bg-dark
           accent-3">
   
         <LeftBtnMenuNav/>
         
         <!--Top Menu Start -->
-        <div class="navbar-custom-menu">
+        <div class="navbar-custom-menu bg-dark">
                
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav bg-dark">
       
             <MsgBoxTopNav />
             <NotiNav />
@@ -60,8 +61,8 @@
   </div>
 
   <div class="page has-sidebar-left">
-    <div class="m-1 container-fluid bg-white">
-      <div class="card-body">
+    <div class="m-1 container-fluid">
+      <div class="card-body bg-gradient-light">
         <router-view v-if="user.permissions" />
       </div>
     </div>
@@ -117,7 +118,7 @@ export default {
   },
 
   setup() {
-    console.clear();
+  //  console.clear();
     const router = useRouter();
     const user = ref("");
     const store = useStore();

@@ -17,10 +17,11 @@ export default {
     DataTable
   },
   setup() {
+     let hideSearch = ref(true);
     const loading = ref(false);
     let resetTable = ref(false);
     let componentKey = ref(0);
-    let hideSearch = ref(false);
+
     let modelsearch = ref([]);
     const { form, errors, submitting, validateFields, resetFields } =
       useValidation({
@@ -93,10 +94,10 @@ export default {
       <div class="row" style="margin-top: -4em; margin-right: -3em">
         <div class="col-11"></div>
         <div class="col-1 float-right">
-          <b>show search</b>
+          <b style="margin: -1em;">show search</b>
           <label class="switch">
-            <input type="checkbox" class="m-1" v-model="hideSearch" />
-            <span class="slider round"></span>
+            <input type="checkbox" class="m-1 bg-dark" v-model="hideSearch" />
+            <span class="slider round bg-dark"></span>
           </label>
         </div>
       </div>
