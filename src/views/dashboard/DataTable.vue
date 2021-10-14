@@ -81,7 +81,7 @@ export default {
 <div class="container-fluid">
    <div class="card">
   <div class="card-body">
-    <table class="table table-hover table-bordered table-responsive" id="example">
+    <table class="table table-hover table-bordered" id="example">
       <thead>
         <tr>
           <th>ID</th>
