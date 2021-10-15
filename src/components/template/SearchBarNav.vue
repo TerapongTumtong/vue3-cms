@@ -23,8 +23,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
             class="paper-nav-toggle paper-nav-white active"
-            ><i></i
-          ></a>
+            ><i></i></a>
           </div>
            </div>
            </div>

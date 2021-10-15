@@ -1,8 +1,13 @@
 <template>
+   <div class="card">
+        <div class="card-body">
+        
   <TitleDetail :titleName="'Dasdboard'" :titleDetail="'dasdboard / search'" />
     <div class="container-fluid my-3">
        <SearchData />
    </div>
+    </div>
+     </div>
 </template>
 
 <script>

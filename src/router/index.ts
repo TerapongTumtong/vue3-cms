@@ -11,7 +11,7 @@ import DynamicObject from "../views/form-demo/DynamicObject.vue";
 
 import Login from '../views/login/Login.vue';
 import MainPage from '../views//MainPage.vue';
-import Dashboard from '../views/dashboard/Dashboard.vue';
+import FormDemo from '../views/formDemo/FormDemo.vue';
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -21,8 +21,8 @@ const routes: Array<RouteRecordRaw> = [
         path: '',
         component: MainPage,
         children: [
-            {path: '', redirect: '/dashboard'},
-            {path: '/dashboard', component: Dashboard},
+            {path: '', redirect: '/demo'},
+            {path: '/demo', component: FormDemo},
         ]
     },
    

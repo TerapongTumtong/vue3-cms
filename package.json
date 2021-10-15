@@ -12,6 +12,7 @@
         "@popperjs/core": "^2.10.2",
         "@types/datatables.net-buttons": "^1.4.7",
         "axios": "^0.22.0",
+        "babel-loader": "^8.2.2",
         "bootstrap": "^5.1.2",
         "core-js": "3.17.3",
         "datatables.net-buttons": "^2.0.1",

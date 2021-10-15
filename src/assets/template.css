@@ -24556,14 +24556,6 @@ ul li:before {
     transition: opacity 1s ease-in-out
 }
 
-.loaded {
-    overflow: visible
-}
-
-.loader-fade {
-    display: none
-}
-
 #nprogress {
     pointer-events: none
 }
